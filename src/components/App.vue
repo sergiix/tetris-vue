@@ -1,5 +1,8 @@
 <template>
   <div id="app" v-on:keyup="keyDown()">
+    <div class="sourceCode">
+      <a href="https://github.com/sergiix/tetris-vue" target="_blank">Source code</a>
+    </div>
     <div>Score: {{score}}</div>
     <div class="table">
       <div v-for="row in table" class="row">
@@ -316,5 +319,8 @@
   }
   .filled {
     background-color: #c0b6c9;
+  }
+  .sourceCode {
+    text-align: right;
   }
 </style>
